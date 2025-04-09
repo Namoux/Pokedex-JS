@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Pokedex</title>
+
+</head>
+<body>
+    <header>
+        <h1>Pokédex</h1>
+    </header>
+
+    <main>
+
+        <h2 class="loading"><i class="fa-solid fa-spinner fa-spin-pulse"></i></h2>
+
+        <section class="principal">
+
+
+            <nav class="case">
+                <template class="listPokemon">
+                    <div class="Pokedex">
+                        <p class="pokedexId"></p>
+                        <h2 class="namePokemon"></h2>
+                        <img src="" alt="">
+                    </div>
+                </template>
+            </nav>
+
+            <nav class="presentation">
+
+                <div class="Research">
+                    <form class="searchbar">
+                        <input autocomplete="off" type="search" id="search" name="recherche" placeholder="Recherche d'un pokémon">
+                        <button id="loupe" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+                    </form>
+                    <div class="listSearch">
+                        <template class="SearchPokemon">
+                            <div class="PokemonFound">
+                                <p></p>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+
+                <div class="NoPokemon">
+                    <h2>Sélectionnez un Pokémon</h2>
+                </div>
+
+                <div class="PlanPokemon">
+                    <div class="IDtitle">
+                        <p>n°<span id="pokedexId"></span></p>
+                    </div>
+                    <div class="firstPlan">
+                        <div class="identité">
+                            <img src="" alt="">
+                        </div>
+                        <div class="stats">
+                            <p>HP: <span id="HP"></span></p>
+                            <p>Attack: <span id="attack"></span></p>
+                            <p>Defense: <span id="defense"></span></p>
+                            <p>special Attack: <span id="Sattack"></span></p>
+                            <p>special Defense: <span id="Sdefense"></span></p>
+                            <p>Speed: <span id="speed"></span></p>
+                        </div>
+                    </div>
+                    <div class="secondPlan">
+                        <h2 id="namePokemon"></h2>
+                        <p>Types</p>
+                        <div class="types">
+                        </div>
+                    </div>
+                    <div class="thirdPlan">
+                        <p>Evolutions</p>
+                        <nav class="case1">
+                            <template class="EvolutionPokemon">
+                                <div class="PokemonEvolution">
+                                    <p class="pokedexId"></p>
+                                    <h2 class="namePokemon"></h2>
+                                    <p class="loading1"><i class="fa-solid fa-spinner fa-spin-pulse"></i></p>
+                                    <img src="" alt="">
+                                </div>
+                            </template>
+                        </nav>
+                    </div>
+
+                </div>
+            </nav>
+
+        </section>
+    </main>
+
+</body>
+<script type="module" src="main.js"></script>
+</html>

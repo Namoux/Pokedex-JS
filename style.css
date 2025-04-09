@@ -1,0 +1,373 @@
+:root{
+    --red-classic : rgb(224, 126, 69);
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    color:white;
+    background: linear-gradient(rgb(165, 9, 9), var(--red-classic));
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    padding: 0px 60px 0px 60px;;
+}
+
+.loading {
+    font-size: 6rem;
+    position: fixed;
+    top : 35%;
+    left : 15%;
+}
+
+.principal {
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.case {
+    padding: 0px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 85vh;
+    overflow: scroll;
+    width: 70%;
+}
+
+.Pokedex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px;
+    cursor: pointer;
+}
+
+.Pokedex img {
+    width: 60px;
+    aspect-ratio: 1/1;
+}
+
+.IDtitle p {
+    margin: 10px 0px 0px 0px;
+}
+
+.presentation{
+    background: rgb(240,137,78);
+    background: linear-gradient(342deg, rgba(240,137,78,1) 30%, rgba(255,255,255,1) 98%);     display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+.Research {
+    position: relative;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#search {
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+}
+
+#loupe {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.listSearch {
+    position: absolute;
+    top: 101%;
+    right: 50%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    background-color: white;
+    padding: 0px 30px 0px 30px;
+    cursor: pointer;
+    color: black;
+}
+
+.listSearch.add {
+    display: block;
+}
+
+.PlanPokemon {
+    display: none;
+}
+
+.PlanPokemon.appear {
+    display: block;
+}
+
+.NoPokemon {
+    height: 83%;
+    display: flex;
+    align-items: center;
+}
+
+.NoPokemon.disappear {
+    display: none;
+}
+
+.firstPlan {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0px 70px 0px 70px;
+}
+
+.IDtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondPlan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondPlan h2 {
+    margin: 0px;
+    font-size: 2rem;
+}
+
+.identité {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.identité img {
+    aspect-ratio: 1/1;
+    width: 280px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats p {
+    margin: 10px;
+}
+
+.secondPlan p {
+    margin: 0px;
+}
+
+.types {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.types img {
+    aspect-ratio: 1/1;
+    width: 60px;
+}
+
+.thirdPlan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thirdPlan p {
+    margin: 0px;
+    margin-top: 5px;
+}
+
+ .case1 {
+    display: flex;
+    padding: 20px;
+ }
+
+ .case1.evoli{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    /* padding: 10px 20px 20px 20px; */
+ }
+
+.PokemonEvolution {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px;
+    cursor: pointer;
+    padding: 0px 30px 0px 30px;
+    gap: 20px;
+}
+
+.PokemonEvolution img {
+    width: 60px;
+    aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 1200px) { /* Tablettes et grand smartphones */
+    main {
+        padding: 0px 10px 0px 10px;;
+    }
+    
+    .principal {
+        gap: 0px;
+        margin: 0px;
+    }
+
+    .firstPlan {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .searchbar {
+        gap: 10px;
+    }
+
+    .identité img {
+        width: 200px;
+    }
+
+    .stats p {
+        margin: 10px;
+    }
+
+    .case1.evoli {
+        padding: 0px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-height: 15vh;
+        overflow-y: scroll;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) { /* Petits smartphones */ 
+    
+    body {
+        margin: 0px;
+    }
+
+    main {
+        padding: 0px 10px 0px 10px;;
+    }
+
+    .principal {
+        gap: 0px;
+        grid-template-columns: 35% 65%;
+        margin: 0px;
+    }
+
+    .Pokedex {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    
+    .Pokedex p {
+        margin: 0px;
+    }
+    
+    .Pokedex h2 {
+        margin: 0px;
+    }
+    
+    .Pokedex img {
+        width: 100%;
+    }
+
+    #search {
+        width: 100px;
+    }
+
+    .searchbar {
+        gap: 10px;
+    }
+
+    .listSearch {
+        right: -5%;
+    }
+
+    .firstPlan {
+        padding: 0px 0px 0px 0px;
+        grid-template-columns: 1fr;
+    }
+
+    .identité img {
+        width: 150px;
+    }
+
+    .stats p {
+        margin: 0px;
+    }
+
+    .case1 {
+        padding: 0px;
+    }
+
+    .PokemonEvolution {
+        display: flex;
+        /* flex-direction: column; */
+        padding: 0px;
+        gap: 0px;
+        justify-content: space-around;
+        /* width: 20%; */
+    }
+    
+    .PokemonEvolution p {
+        font-size: 10px;
+        margin: 0px;
+    }
+
+    .PokemonEvolution h2 {
+        font-size: 10px;
+        margin: 0px;
+    }
+
+    .PokemonEvolution img {
+        width: 20%;
+    }
+
+    .case1.evoli {
+        padding: 0px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-height: 15vh;
+        overflow: scroll;
+        width: 70%;
+    }
+    
+}
